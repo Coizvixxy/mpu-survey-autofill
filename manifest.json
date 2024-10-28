@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "MPU Course Survey Auto Fill",
+  "version": "1.0",
+  "description": "Automatically fill MPU course survey form",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://osf.mpu.edu.mo/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://osf.mpu.edu.mo/*"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}

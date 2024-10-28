@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .score-1 { background-color: #4CAF50; color: white; }
+    .score-2 { background-color: #8BC34A; color: white; }
+    .score-3 { background-color: #FFC107; color: black; }
+    .score-4 { background-color: #FF9800; color: white; }
+    .score-5 { background-color: #F44336; color: white; }
+  </style>
+</head>
+<body>
+  <h3>MPU Survey Auto Fill</h3>
+  <div class="button-group">
+    <button id="score1" class="score-1">Strongly Agree (Best Rating)</button>
+    <button id="score2" class="score-2">Agree</button>
+    <button id="score3" class="score-3">Neutral</button>
+    <button id="score4" class="score-4">Disagree</button>
+    <button id="score5" class="score-5">Strongly Disagree</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
